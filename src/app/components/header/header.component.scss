@@ -1,0 +1,38 @@
+.header {
+    display: grid;
+    grid-template-columns: auto 1fr; /* Logo on the left, right-section takes remaining space */
+    align-items: center; /* Center the content vertically */
+    padding: 10px;
+    background-color: #f0f0f0;
+  }
+  
+  .logo {
+    /* Add styling for the logo */
+  }
+  
+  .right-section {
+    display: flex;
+    justify-content: flex-end; /* Align the content to the right */
+    /* Add any additional styling for the right section */
+  }
+  
+  .logout {
+    /* Add styling for the logout link */
+  }
+  
+  header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: #f0f0f0;
+  }
+  
+  .links-container {
+    display: flex;
+  }
+  
+  .links-container a {
+    margin-left: 10px; /* Add spacing between links */
+  }
+  

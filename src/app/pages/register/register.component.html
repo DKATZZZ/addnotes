@@ -1,1 +1,49 @@
 <p>register works!</p>
+<!-- <form [formGroup]="signupForm" (ngSubmit)="signup()">
+    <div>
+      <label for="name">Name:</label>
+      <input type="text" id="name" formControlName="name">
+      <div *ngIf="signupForm.get('name')?.invalid && signupForm.get('name')?.touched">
+        Name is required.
+      </div>
+    </div>
+    <div>
+      <label for="email">Email:</label>
+      <input type="email" id="email" formControlName="email">
+      <div *ngIf="signupForm.get('email')?.invalid && signupForm.get('email')?.touched">
+        Email is required and must be a valid email address.
+      </div>
+    </div>
+    <div>
+      <label for="password">Password:</label>
+      <input type="password" id="password" formControlName="password">
+      <div *ngIf="signupForm.get('password')?.invalid && signupForm.get('password')?.touched">
+        Password is required and must be at least 6 characters long.
+      </div>
+    </div>
+    <button type="submit" [disabled]="signupForm.invalid">Signup</button>
+  </form> -->
+
+  <div class="register-container">
+    <h2>Register</h2>
+    <form>
+      <label for="name">Name:</label>
+      <input type="text" id="name" placeholder="Enter your name">
+      <div *ngIf="signupForm.get('name')?.invalid && signupForm.get('name')?.touched">
+        Name is required.
+      </div>
+      <label for="email">Email:</label>
+      <input type="email" id="email" placeholder="Enter your email">
+      <div *ngIf="signupForm.get('email')?.invalid && signupForm.get('email')?.touched">
+        Email is required and must be a valid email address.
+      </div>
+      <label for="password">Password:</label>
+      <input type="password" id="password" placeholder="Enter your password">
+      <div *ngIf="signupForm.get('password')?.invalid && signupForm.get('password')?.touched">
+        Password is required and must be at least 6 characters long.
+      </div>
+      <button type="submit">Register</button>
+    </form>
+  </div>
+  
+  
