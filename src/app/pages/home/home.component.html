@@ -1,1 +1,25 @@
 <p>home works!</p>
+<header class="header">
+    <div class="logo">Logo</div>
+    <div class="links-container">
+      <button *ngIf="isLoggedIn" (click)="logout()">Logout</button>
+      <!-- Add other right-section content if needed -->
+    </div>
+    
+  </header>
+
+  <div class="grid">
+    <section>
+        <div class="card">
+           <div>
+              Add Notes
+           </div>
+           <div>
+              Edit Notes
+           </div>
+           <div>
+            Delete Notes
+           </div>
+        </div>
+    </section>
+  </div>

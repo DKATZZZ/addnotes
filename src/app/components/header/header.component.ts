@@ -23,10 +23,7 @@ export class HeaderComponent {
     
   }
 
-  logout() {
-    this.authService.logout();
-    this.isLoggedIn = false;
-  }
+
   signup(){
     this.router.navigate(['./register']);
   }
